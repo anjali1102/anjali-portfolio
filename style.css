@@ -5,17 +5,10 @@
   --off-white: #f3f4f6;
   --gray: #9ca3af;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0px;
-}
-
-hr {
-  margin: 2rem 0rem;
-}
-
-.margin-md {
-  margin: 2rem;
 }
 
 .container {
@@ -32,27 +25,32 @@ hr {
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
+
 .link-primary {
   background-color: var(--primary-color);
   border-radius: 0.5rem;
   color: white;
   display: block;
   max-width: 140px;
-  margin: 1rem 1rem 1rem 14.5rem;
+  margin: 1rem auto;
+  padding: 0.6rem 1.2rem;
 }
+
 .link-secondary {
   color: var(--primary-color);
   border-radius: 0.5rem;
   border: 1px solid var(--primary-color);
   display: block;
   max-width: 140px;
-  margin: 1rem 1rem 1rem 14.5rem;
+  margin: 1rem auto;
+  padding: 0.6rem 1.2rem;
 }
 
 .list-non-bullet {
   list-style: none;
   padding-inline-start: 0px;
 }
+
 .list-item-inline {
   display: inline;
   padding: 0rem 0.5rem;
@@ -68,12 +66,21 @@ hr {
 .navigation .nav-name {
   font-weight: bold;
 }
+
+.nav-name a{
+  text-decoration: none;
+  color:inherit;
+}
+
 .navigation .nav-pills {
   text-align: right;
+  margin: 0.6rem 1rem;
 }
+
 .navigation .link {
   color: white;
 }
+
 .navigation .link-active {
   font-weight: bold;
 }
@@ -83,12 +90,14 @@ hr {
   padding: 2rem;
   padding-top: 5rem;
 }
+
 .user .user-img {
   max-width: 80%;
   width: 350px;
   display: block;
   margin: auto;
 }
+
 .user .user-heading {
   text-align: center;
   padding-top: 1rem;
@@ -102,6 +111,7 @@ hr {
 .section {
   padding: 2rem;
 }
+
 .section h1 {
   text-align: center;
 }
@@ -130,10 +140,22 @@ hr {
   padding-inline-start: 0px;
 }
 
-.showcase-list {
-  padding: 2rem;
-}
+@media (max-width: 900px) {
+  body {
+    max-width: 100%;
+    width: 100%;
+  }
 
-.showcase-blog {
-  padding-bottom: 6rem;
+  .list-item-inline {
+    display: inline;
+    padding: 0rem;
+  }
+
+  .container-center {
+    width: auto;
+  }
+
+  .link-primary {
+    display: block;
+  }
 }
